@@ -1,0 +1,9 @@
+html 
+    head
+        title= title
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    body
+        div(style="text-align:center;font-size:large") 
+            each jezyk in programowanie
+                a(href=link+jezyk.id)= jezyk.nazwa
+                br

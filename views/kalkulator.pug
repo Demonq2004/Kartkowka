@@ -1,0 +1,17 @@
+html 
+    head
+        title= title
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    body
+        div 
+            form(action="/kalkulator", method="post")
+                label(for="dzul") J na Kcal
+                input(type="number" name="dzul" required)
+                input(type="submit", value="Oblicz")
+                p(style="color:red") #{wynikD}
+
+            form(action="/kalkulator", method="post")
+                label(for="kcal") Kcal na J
+                input(type="number" name="kcal" required)
+                input(type="submit", value="Oblicz")
+                p(style="color:red") #{wynikK}
